@@ -1,0 +1,76 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.Btn {
+  margin: 0.5rem;
+}
+.bg-turquoise {
+  background-color: #44aca8;
+  color: white;
+}
+.borderless td {
+  border: none !important;
+}
+button.btn-primary:focus {
+  background-color: #3c8dbc;
+}
+
+.row.is-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+* And with max cross-browser enabled.
+* Nobody should ever write this by hand. 
+* Use a preprocesser with autoprefixing.
+*/
+.row.is-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+li.leftBorder a.active {
+  border-left: 3px solid #3c8dbc !important;
+}
+.Box {
+  height: 180px !important;
+}
+@media (max-width: 360px) {
+  .small-box h3 {
+    font-size: 30px !important;
+  }
+  .small-box h4 {
+    font-size: 14px !important;
+  }
+}
